@@ -7,6 +7,26 @@ body {
   );
 }
 
+.anniversary
+{
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.anniversary img 
+{
+  height: 10%;
+  width: 10%;
+}
+
+.thumbnail
+{
+  width: 100%;
+}
+
 .qr-display {
   display: flex;
   justify-content: space-evenly;
@@ -97,3 +117,31 @@ form > * {
   background-color: #c0392b;
   transform: scale(1.1);
 }
+
+footer {
+  background-color: #222;
+  color: white;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #f1c40f;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+

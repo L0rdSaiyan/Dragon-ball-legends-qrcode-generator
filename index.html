@@ -1,42 +1,34 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="https://www.iconarchive.com/download/i45736/musett/dragon-ballz/Dragon-Radar.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Victor Sales">
-    <title>DBL QrCode Generator</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  </head>
-  <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Victor Sales">
+  <title>DBL QrCode Generator</title>
+  <link rel="icon" href="https://www.iconarchive.com/download/i45736/musett/dragon-ballz/Dragon-Radar.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <img class="thumbnail" src="https://yt3.googleusercontent.com/OGHNL1z3g2ghmvWLpaTWZUQuWxFXdlsXn1GQ-Yr1TG8vBHZ1dlCY30y23ysPULHC0hM0FsZ_t2k=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Stylork banner" />
+  </header>
 
-    <!-- this is the start of content -->
+  <main>
     <form id="dbl-qr" method="POST" action="/" enctype="multipart/form-data">
       <fieldset class="qr-method">
-      
-
         <input id="qr-auto" type="radio" name="qr-method" value="auto" checked />
-        
-        <br />
-
-    
-        <br /><br />
-
         <input type="hidden" id="qrcode_b64" />
       </fieldset>
-
 
       <div class="containerFields">
         <div class="title">
           <span>Coloque o código de amizade de até 3 amigos</span>
-
         </div>
-        <input class="input" type="text" minlength="8" maxlength="8" placeholder="Friend 1 ..." autocomplete="dbl-qr-1" name="dbl-qr-1" />
-        <input class="input"type="text" minlength="8" maxlength="8" placeholder="Friend 2 ..." autocomplete="dbl-qr-1" name="dbl-qr-2" />
-        <input class="input" type="text" minlength="8" maxlength="8" placeholder="Friend 3 ..." autocomplete="dbl-qr-1" name="dbl-qr-3" />
-      </div class="containerFields">
+        <input class="input" type="text" minlength="8" maxlength="8" placeholder="Friend 1 ..." name="dbl-qr-1" />
+        <input class="input" type="text" minlength="8" maxlength="8" placeholder="Friend 2 ..." name="dbl-qr-2" />
+        <input class="input" type="text" minlength="8" maxlength="8" placeholder="Friend 3 ..." name="dbl-qr-3" />
+      </div>
 
       <input type="submit" value="Gerar QR" id="submit" />
     </form>
@@ -45,38 +37,45 @@
       <div class="card">
         <div id="qr-display-1"></div>
         <h1 id="codeName1"></h1>
-
       </div>
       <div class="card">
         <div id="qr-display-2"></div>
         <h1 id="codeName2"></h1>
-
-        </div>
-        <div class="card">
-          <div id="qr-display-3"></div>
-          <h1 id="codeName3"></h1>
-          </div>
-
+      </div>
+      <div class="card">
+        <div id="qr-display-3"></div>
+        <h1 id="codeName3"></h1>
+      </div>
     </div>
 
-    <script type="text/javascript" src="libraries/jsqrcode/grid.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/version.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/detector.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/formatinf.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/errorlevel.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/bitmat.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/datablock.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/bmparser.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/datamask.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/rsdecoder.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/gf256poly.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/gf256.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/decoder.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/qrcode.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/findpat.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/alignpat.js"></script>
-    <script type="text/javascript" src="libraries/jsqrcode/databr.js"></script>
+    <div class="anniversary">
+      <img src="https://media.discordapp.net/attachments/752339592132296765/1373477246211199006/mv_logo.png?ex=682b369d&is=6829e51d&hm=6c6dbe79d7d6ec540c25be79b3480c620aee8371e3c7c6374bc6631849990a05&=&format=webp&quality=lossless" alt="Anniversary logo">
+    </div>
+  </main>
 
-    <script type="text/javascript" src="qr.js"></script>
-  </body>
+  <footer>
+    <p>Feito com ❤️ por <strong>Stylork</strong></p>
+    <a href="https://www.youtube.com/@stylork" target="_blank">🔗 YouTube: @Stylork</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="libraries/jsqrcode/grid.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/version.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/detector.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/formatinf.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/errorlevel.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/bitmat.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/datablock.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/bmparser.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/datamask.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/rsdecoder.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/gf256poly.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/gf256.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/decoder.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/qrcode.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/findpat.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/alignpat.js"></script>
+  <script type="text/javascript" src="libraries/jsqrcode/databr.js"></script>
+  <script type="text/javascript" src="qr.js"></script>
+</body>
 </html>
