@@ -165,7 +165,6 @@ form {
   align-items: center;
   flex-direction: column;
 }
-
 form > * {
   margin-top: 15px;
 }
