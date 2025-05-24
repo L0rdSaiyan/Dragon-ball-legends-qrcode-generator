@@ -56,9 +56,10 @@ body {
 }
 
 .featuredVideo {
-  min-width: 300px;
+  min-width: 150px;
   margin-right: 20px;
   box-sizing: border-box;
+  height: auto;
   background: #f0f0f0;
   border-radius: 6px;
   overflow: hidden;
@@ -79,11 +80,10 @@ body {
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .carouselButton {
   position: absolute;
   top: 50%;
@@ -256,3 +256,33 @@ footer a:hover {
   50% { transform: translateX(-60%); }
   100% { transform: translateX(0); }
 } */
+
+@media (max-width: 600px) {
+  .featuredVideo p {
+    font-size: 14px;
+  }
+
+  .featuredVideo {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  #carouselTrack {
+    flex-direction: column;
+  }
+
+  #prevButton
+  {
+    visibility: hidden;
+  }
+
+  #nextButton
+  {
+    visibility: hidden;
+  }
+  .featuredVideo img {
+    width: auto;
+
+}
+
+}
