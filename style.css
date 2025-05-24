@@ -1,10 +1,6 @@
 body {
   height: 100vh;
-  background: radial-gradient(
-    circle at 18.7% 37.8%,
-    rgb(82, 82, 82) 0%,
-    rgb(181, 185, 187) 90%
-  );
+  background-color: #202324;
 }
 
 
@@ -13,8 +9,10 @@ body {
 {
   text-align: center;
   width: 100%;
+  color: white;
   justify-content: center;
   align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .videosContainer {
@@ -31,6 +29,8 @@ body {
   transform: translatey(-2%);
   transition: 200ms;
   border: 1px solid white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+
 }
 
 #carouselWrapper {
@@ -75,13 +75,14 @@ body {
 
 .featuredVideo p {
   padding: 8px;
-  font-size: 14px;
+  font-size: 15px;
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .carouselButton {
   position: absolute;
