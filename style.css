@@ -7,6 +7,109 @@ body {
   );
 }
 
+
+
+.checkNewVideos
+{
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.videosContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+  padding: 0 60px; 
+  box-sizing: border-box;
+}
+
+
+.featuredVideo:hover{
+  transform: translatey(-2%);
+  transition: 200ms;
+  border: 1px solid white;
+}
+
+#carouselWrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  max-width: 100%; 
+  margin: 20px auto;
+  
+}
+
+#carouselViewport {
+  overflow: hidden;
+  width: 100%; 
+}
+
+#carouselTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+
+}
+
+.featuredVideo {
+  min-width: 300px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+ 
+}
+
+.featuredVideo img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.featuredVideo p {
+  padding: 8px;
+  font-size: 14px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+  user-select: none;
+}
+
+#prevButton {
+  left: 10px;
+}
+
+#nextButton {
+  right: 10px;
+}
+
+.carouselButton:hover {
+  background-color: #555;
+}
 .anniversary
 {
   display: flex;
@@ -123,6 +226,7 @@ footer {
   color: white;
   bottom: 0;
   text-align: center;
+  margin-top: 50px;
   padding: 15px;
   font-size: 14px;
 }
@@ -145,3 +249,10 @@ footer a:hover {
 }
 
 
+
+/* 
+@keyframes slideCarousel {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-60%); }
+  100% { transform: translateX(0); }
+} */

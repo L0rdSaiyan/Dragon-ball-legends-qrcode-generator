@@ -8,6 +8,7 @@
   <link rel="icon" href="https://www.iconarchive.com/download/i45736/musett/dragon-ballz/Dragon-Radar.ico" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="youtubeAPIHandler.js" defer></script>
 </head>
 <body>
   <header>
@@ -49,9 +50,21 @@
     </div>
 
     <div class="anniversary">
-      <img src="https://media.discordapp.net/attachments/752339592132296765/1373477246211199006/mv_logo.png?ex=682b369d&is=6829e51d&hm=6c6dbe79d7d6ec540c25be79b3480c620aee8371e3c7c6374bc6631849990a05&=&format=webp&quality=lossless" alt="Anniversary logo">
+      <img src="/images/mv_logo.png" alt="Anniversary logo">
     </div>
   </main>
+
+  <div class="checkNewVideos">
+    <h1>Confira os vídeos mais recentes do canal!</h1>
+  </div>
+
+<div id="carouselWrapper">
+  <button id="prevButton">◀</button>
+  <div id="carouselViewport">
+    <div id="carouselTrack"></div>
+  </div>
+  <button id="nextButton">▶</button>
+</div>
 
   <footer>
     <p>Feito com ❤️ por <strong>Stylork</strong></p>
@@ -72,7 +85,6 @@
   <script type="text/javascript" src="libraries/jsqrcode/gf256poly.js"></script>
   <script type="text/javascript" src="libraries/jsqrcode/gf256.js"></script>
   <script type="text/javascript" src="libraries/jsqrcode/decoder.js"></script>
-  <script type="text/javascript" src="libraries/jsqrcode/qrcode.js"></script>
   <script type="text/javascript" src="libraries/jsqrcode/findpat.js"></script>
   <script type="text/javascript" src="libraries/jsqrcode/alignpat.js"></script>
   <script type="text/javascript" src="libraries/jsqrcode/databr.js"></script>
