@@ -203,6 +203,7 @@ form > * {
 }
 
 .containerFields {
+  color: white;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -214,6 +215,15 @@ form > * {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.containerFields span{
+ color: white;
+}
+
+
+.containerFields p{
+ color: white;
 }
 
 #submit:hover {
